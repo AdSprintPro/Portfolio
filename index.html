@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monish Kumar — Performance Marketer | Lead Generation & SaaS Marketing | Delhi</title>
+<meta name="description" content="Portfolio of Monish Kumar — performance marketer specializing in lead generation, SaaS marketing, and growth strategy for B2B SaaS, EdTech, Healthcare, and D2C brands. Based in Delhi, India.">
+<meta name="keywords" content="performance marketer Delhi, lead generation, SaaS marketing, freelance marketer India, Monish Kumar">
+<meta property="og:title" content="Monish Kumar — Performance Marketer">
+<meta property="og:description" content="I help startups & growth-stage brands build math-backed revenue engines through paid acquisition, lead-gen, and CRO.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --neon-cyan: #00f0ff;
+  --neon-purple: #8b5cf6;
+  --neon-pink: #ec4899;
+  --dark-bg: #050816;
+  --dark-card: #0a0f1f;
+  --dark-border: rgba(139, 92, 246, 0.2);
+  --light-bg: #f8fafc;
+  --light-card: #ffffff;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --gradient-1: linear-gradient(135deg, #00f0ff 0%, #8b5cf6 100%);
+  --gradient-2: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 18px 60px;
+  background: rgba(5, 8, 22, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--dark-border);
+  display: flex; justify-content: space-between; align-items: center;
+  transition: all 0.3s ease;
+}
+nav .logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 22px;
+  background: var(--gradient-1);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  display: flex; align-items: center; gap: 10px;
+}
+nav .logo i { color: var(--neon-cyan); -webkit-text-fill-color: var(--neon-cyan); }
+nav ul { display: flex; gap: 36px; list-style: none; }
+nav ul a { color: #cbd5e1; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.3s; }
+nav ul a:hover { color: var(--neon-cyan); }
+nav .cta-btn {
+  padding: 10px 22px; border-radius: 50px;
+  background: var(--gradient-1); color: white;
+  text-decoration: none; font-weight: 600; font-size: 14px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+nav .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4); }
+
+/* HERO */
+.hero {
+  min-height: 100vh; padding: 140px 60px 80px;
+  background: var(--dark-bg);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(0, 240, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+}
+.hero::after {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(139, 92, 246, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+.hero-content {
+  position: relative; z-index: 2;
+  max-width: 1400px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px;
+  align-items: center;
+}
+.hero-left h4 {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--neon-cyan); font-size: 14px; margin-bottom: 20px;
+  letter-spacing: 3px; text-transform: uppercase;
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-left h4::before { content: ''; width: 40px; height: 1px; background: var(--neon-cyan); }
+.hero-left h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 76px; font-weight: 700;
+  color: white; line-height: 1.05; margin-bottom: 24px;
+  letter-spacing: -2px;
+}
+.hero-left h1 .accent {
+  background: var(--gradient-1);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero-left .tagline { font-size: 20px; color: #94a3b8; margin-bottom: 36px; max-width: 580px; line-height: 1.7; }
+.hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 40px; max-width: 580px; }
+.hero-stat { padding: 18px 0; border-top: 1px solid rgba(139, 92, 246, 0.3); }
+.hero-stat .num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 36px; font-weight: 700;
+  background: var(--gradient-1);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero-stat .label { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+.hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn-primary, .btn-secondary {
+  padding: 16px 32px; border-radius: 50px; font-weight: 600;
+  text-decoration: none; font-size: 15px;
+  transition: all 0.3s; display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-primary {
+  background: var(--gradient-1); color: white; border: none;
+  box-shadow: 0 10px 30px rgba(0, 240, 255, 0.25);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0, 240, 255, 0.5); }
+.btn-secondary { background: transparent; color: white; border: 1px solid rgba(139, 92, 246, 0.5); }
+.btn-secondary:hover { background: rgba(139, 92, 246, 0.15); border-color: var(--neon-purple); }
+.hero-right { position: relative; }
+.hero-image-wrap {
+  position: relative; border-radius: 24px; overflow: hidden;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 40px 80px rgba(0, 240, 255, 0.1);
+}
+.hero-image-wrap img { width: 100%; display: block; }
+.floating-badge {
+  position: absolute; padding: 14px 20px;
+  background: rgba(10, 15, 31, 0.85); backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: 14px; color: white; font-size: 13px;
+  display: flex; align-items: center; gap: 10px;
+  animation: float 4s ease-in-out infinite;
+}
+.floating-badge i { color: var(--neon-cyan); font-size: 16px; }
+.badge-1 { top: -20px; left: -20px; }
+.badge-2 { bottom: -20px; right: -20px; animation-delay: 1.5s; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+/* TRUST STRIP */
+.trust-strip {
+  background: var(--dark-bg);
+  padding: 30px 0; border-top: 1px solid var(--dark-border);
+  border-bottom: 1px solid var(--dark-border);
+  overflow: hidden; position: relative;
+}
+.marquee { display: flex; gap: 80px; animation: marquee 30s linear infinite; white-space: nowrap; }
+.marquee span {
+  color: #475569; font-family: 'JetBrains Mono', monospace;
+  font-size: 16px; letter-spacing: 2px; text-transform: uppercase;
+  display: flex; align-items: center; gap: 12px;
+}
+.marquee span::before { content: '◆'; color: var(--neon-cyan); }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* SECTIONS */
+section { padding: 100px 60px; }
+.section-tag {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--neon-purple); font-size: 13px;
+  letter-spacing: 3px; text-transform: uppercase;
+  margin-bottom: 16px; display: inline-flex; align-items: center; gap: 10px;
+}
+.section-tag::before { content: ''; width: 30px; height: 1px; background: var(--neon-purple); }
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 52px; font-weight: 700; line-height: 1.1;
+  margin-bottom: 18px; letter-spacing: -1.5px;
+}
+.section-subtitle { font-size: 18px; color: var(--text-muted); max-width: 700px; margin-bottom: 60px; }
+.container { max-width: 1400px; margin: 0 auto; }
+
+/* HONESTY BANNER */
+.honesty-banner {
+  background: linear-gradient(135deg, #fef3c7 0%, #fce7f3 100%);
+  border-left: 4px solid #f59e0b;
+  padding: 20px 28px; border-radius: 12px;
+  margin-bottom: 40px;
+  display: flex; align-items: center; gap: 16px;
+}
+.honesty-banner i { font-size: 24px; color: #d97706; flex-shrink: 0; }
+.honesty-banner div { font-size: 14px; color: #78350f; line-height: 1.6; }
+.honesty-banner strong { color: #451a03; }
+
+/* ABOUT */
+.about { background: var(--light-bg); padding: 120px 60px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.about-text p { font-size: 16px; color: #475569; margin-bottom: 20px; }
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px; }
+.skill-pill {
+  padding: 14px 18px; border: 1px solid #e2e8f0;
+  border-radius: 12px; background: white;
+  display: flex; align-items: center; gap: 12px;
+  font-size: 14px; font-weight: 500; transition: all 0.3s;
+}
+.skill-pill:hover { border-color: var(--neon-purple); box-shadow: 0 8px 20px rgba(139, 92, 246, 0.1); transform: translateY(-2px); }
+.skill-pill i {
+  width: 36px; height: 36px; border-radius: 8px;
+  background: var(--gradient-1); color: white;
+  display: flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.about-visual {
+  position: relative; border-radius: 24px; overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
+}
+.about-visual img { width: 100%; display: block; }
+
+/* APPROACH */
+.approach { background: var(--dark-bg); color: white; position: relative; overflow: hidden; }
+.approach::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 50%, rgba(0, 240, 255, 0.1) 0%, transparent 50%); }
+.approach .section-title { color: white; }
+.approach .section-subtitle { color: #94a3b8; }
+.approach-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 50px; position: relative; z-index: 2; }
+.approach-card {
+  padding: 36px 28px; border-radius: 20px;
+  background: rgba(10, 15, 31, 0.6); backdrop-filter: blur(20px);
+  border: 1px solid var(--dark-border);
+  position: relative; overflow: hidden;
+  transition: all 0.4s;
+}
+.approach-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--gradient-1); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.4s;
+}
+.approach-card:hover::before { transform: scaleX(1); }
+.approach-card:hover { transform: translateY(-8px); border-color: rgba(0, 240, 255, 0.4); }
+.approach-card .step-num { font-family: 'JetBrains Mono', monospace; color: var(--neon-cyan); font-size: 14px; letter-spacing: 2px; margin-bottom: 20px; display: block; }
+.approach-card .icon-box {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.15), rgba(139, 92, 246, 0.15));
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; color: var(--neon-cyan); margin-bottom: 20px;
+}
+.approach-card h4 { font-family: 'Space Grotesk', sans-serif; font-size: 22px; margin-bottom: 12px; font-weight: 600; }
+.approach-card p { color: #94a3b8; font-size: 14px; line-height: 1.7; }
+
+/* CASE STUDIES */
+.case-studies { background: var(--light-bg); }
+.cs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.cs-card {
+  background: white; border-radius: 24px; overflow: hidden;
+  border: 1px solid #e2e8f0; transition: all 0.4s; cursor: pointer;
+  display: flex; flex-direction: column;
+}
+.cs-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+  border-color: var(--neon-purple);
+}
+.cs-image { position: relative; overflow: hidden; aspect-ratio: 16/9; }
+.cs-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+.cs-card:hover .cs-image img { transform: scale(1.05); }
+.cs-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(5, 8, 22, 0.5), transparent); }
+.cs-industry-tag {
+  position: absolute; top: 16px; left: 16px;
+  padding: 6px 14px; border-radius: 50px;
+  background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);
+  font-size: 11px; font-weight: 600; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--text-dark); z-index: 2;
+}
+.cs-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
+.cs-client { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; font-weight: 500; }
+.cs-title { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; line-height: 1.3; margin-bottom: 16px; }
+.cs-summary { color: var(--text-muted); font-size: 14px; margin-bottom: 24px; flex: 1; }
+.cs-takeaways { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 16px 0; border-top: 1px solid #e2e8f0; }
+.cs-takeaway { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-dark); }
+.cs-takeaway i { color: var(--neon-purple); margin-top: 4px; font-size: 11px; }
+.cs-read-more {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 14px; font-weight: 600; color: var(--neon-purple);
+  margin-top: 20px; transition: gap 0.3s;
+}
+.cs-card:hover .cs-read-more { gap: 14px; }
+
+/* DETAILED CASE STUDY */
+.detailed-case { background: white; padding: 100px 60px; border-top: 1px solid #e2e8f0; }
+.detailed-case:nth-of-type(even) { background: var(--light-bg); }
+.dc-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 60px; }
+.dc-left .dc-tag {
+  display: inline-block; padding: 8px 16px; border-radius: 50px;
+  background: rgba(139, 92, 246, 0.1); color: var(--neon-purple);
+  font-size: 12px; font-weight: 600; letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 20px;
+}
+.dc-left h2 { font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; }
+.dc-left .dc-sub { font-size: 16px; color: var(--text-muted); margin-bottom: 30px; }
+.dc-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.dc-meta-item .lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.dc-meta-item .val { font-size: 14px; font-weight: 600; }
+.dc-image { border-radius: 20px; overflow: hidden; aspect-ratio: 16/9; box-shadow: 0 30px 60px rgba(15, 23, 42, 0.1); }
+.dc-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.dc-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 50px; }
+.dc-block { padding: 32px; border-radius: 16px; background: white; border: 1px solid #e2e8f0; }
+.detailed-case:nth-of-type(even) .dc-block { background: white; }
+.dc-block h4 { display: flex; align-items: center; gap: 12px; font-family: 'Space Grotesk', sans-serif; font-size: 20px; margin-bottom: 16px; }
+.dc-block h4 i {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: var(--gradient-1); color: white;
+  display: flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.dc-block p, .dc-block li { color: var(--text-muted); font-size: 14px; line-height: 1.8; }
+.dc-block ul { padding-left: 18px; margin-top: 10px; }
+.dc-block ul li { margin-bottom: 8px; }
+
+.dc-strategy { padding: 40px; border-radius: 20px; background: var(--dark-bg); color: white; margin-bottom: 50px; }
+.dc-strategy h3 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 30px; display: flex; align-items: center; gap: 12px; }
+.dc-strategy h3 i { color: var(--neon-cyan); }
+.dc-strategy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.dc-strategy-item {
+  padding: 24px; border-radius: 14px;
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+.dc-strategy-item .step { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--neon-cyan); letter-spacing: 2px; margin-bottom: 12px; display: block; }
+.dc-strategy-item h5 { font-size: 16px; margin-bottom: 10px; font-weight: 600; }
+.dc-strategy-item p { color: #94a3b8; font-size: 13px; line-height: 1.7; }
+
+.dc-learnings {
+  padding: 50px 40px; border-radius: 24px;
+  background: var(--gradient-1); color: white;
+  margin-bottom: 40px;
+}
+.dc-learnings h3 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 30px; color: white; display: flex; align-items: center; gap: 12px; }
+.dc-learnings-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.dc-learning-item {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 22px; border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dc-learning-item h5 { font-size: 15px; margin-bottom: 8px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+.dc-learning-item h5 i { color: rgba(255,255,255,0.9); }
+.dc-learning-item p { font-size: 13px; opacity: 0.95; line-height: 1.6; }
+
+.dc-stack { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.dc-stack-pill {
+  padding: 8px 14px; border-radius: 50px;
+  background: rgba(15, 23, 42, 0.05);
+  font-size: 12px; font-weight: 500; color: var(--text-dark);
+  border: 1px solid #e2e8f0;
+}
+
+/* SERVICES */
+.services { background: var(--dark-bg); color: white; }
+.services .section-title { color: white; }
+.services .section-subtitle { color: #94a3b8; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card {
+  padding: 40px; border-radius: 20px;
+  background: rgba(10, 15, 31, 0.6); backdrop-filter: blur(20px);
+  border: 1px solid var(--dark-border); transition: all 0.4s;
+}
+.service-card:hover { transform: translateY(-8px); border-color: var(--neon-cyan); }
+.service-card .icon {
+  width: 64px; height: 64px; border-radius: 16px;
+  background: var(--gradient-1); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; margin-bottom: 24px;
+}
+.service-card h4 { font-family: 'Space Grotesk', sans-serif; font-size: 22px; margin-bottom: 14px; }
+.service-card p { color: #94a3b8; font-size: 14px; line-height: 1.7; }
+.service-card ul { margin-top: 16px; padding-left: 0; list-style: none; }
+.service-card ul li {
+  color: #cbd5e1; font-size: 13px; padding: 8px 0;
+  display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+}
+.service-card ul li i { color: var(--neon-cyan); font-size: 11px; }
+
+/* STACK */
+.stack { background: var(--light-bg); padding: 100px 60px; }
+.stack-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-top: 40px; }
+.stack-item {
+  padding: 22px; border-radius: 14px;
+  background: white; border: 1px solid #e2e8f0;
+  text-align: center; transition: all 0.3s;
+  font-size: 13px; font-weight: 600;
+}
+.stack-item:hover { transform: translateY(-4px); border-color: var(--neon-purple); box-shadow: 0 12px 24px rgba(139, 92, 246, 0.1); }
+.stack-item i {
+  font-size: 28px; margin-bottom: 10px;
+  background: var(--gradient-1);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+/* CONTACT */
+.contact { background: var(--dark-bg); color: white; text-align: center; padding: 140px 60px; position: relative; overflow: hidden; }
+.contact::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.15) 0%, transparent 50%); }
+.contact-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+.contact h2 { font-family: 'Space Grotesk', sans-serif; font-size: 64px; font-weight: 700; line-height: 1.05; margin-bottom: 24px; }
+.contact h2 span { background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.contact p { font-size: 18px; color: #94a3b8; margin-bottom: 40px; }
+.contact-info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 60px; }
+.contact-card {
+  padding: 30px 20px; border-radius: 16px;
+  background: rgba(10, 15, 31, 0.6); backdrop-filter: blur(20px);
+  border: 1px solid var(--dark-border); transition: all 0.3s;
+  text-decoration: none; color: white; display: block;
+}
+.contact-card:hover { transform: translateY(-4px); border-color: var(--neon-cyan); }
+.contact-card i { font-size: 28px; color: var(--neon-cyan); margin-bottom: 14px; }
+.contact-card .lbl { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+.contact-card .val { font-size: 16px; font-weight: 600; color: white; }
+
+footer { background: #020410; padding: 40px 60px; border-top: 1px solid var(--dark-border); text-align: center; color: #64748b; font-size: 13px; }
+footer .logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 24px;
+  background: var(--gradient-1);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 968px) {
+  nav { padding: 16px 24px; }
+  nav ul { display: none; }
+  section, .hero, .about, .approach, .contact, .stack { padding: 70px 24px; }
+  .hero-left h1 { font-size: 44px; }
+  .section-title { font-size: 34px; }
+  .contact h2 { font-size: 40px; }
+  .hero-content, .about-grid, .dc-header, .dc-content { grid-template-columns: 1fr; gap: 40px; }
+  .cs-grid, .approach-grid, .services-grid, .dc-strategy-grid, .dc-learnings-grid { grid-template-columns: 1fr; }
+  .stack-grid { grid-template-columns: repeat(3, 1fr); }
+  .contact-info { grid-template-columns: 1fr; }
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><i class="fas fa-bolt"></i> MONISH<span style="color: #00f0ff; -webkit-text-fill-color: #00f0ff;">.</span></div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#case-studies">Case Studies</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="cta-btn">Book a Call <i class="fas fa-arrow-right"></i></a>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-left">
+      <h4>Performance Marketing × Growth Engineering</h4>
+      <h1>I build <span class="accent">revenue engines</span> for SaaS & D2C founders.</h1>
+      <p class="tagline">Hi, I'm Monish Kumar — a performance marketer based in Delhi, India. I help startups & growth-stage brands turn paid media, marketing automation, and CRO into a math-backed acquisition system.</p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">2+ yrs</div>
+          <div class="label">Hands-On Experience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">6</div>
+          <div class="label">Detailed Case Studies</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">15+</div>
+          <div class="label">Tools Mastered</div>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#case-studies" class="btn-primary">View Case Studies <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-secondary"><i class="fas fa-calendar"></i> Free Strategy Call</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-image-wrap">
+        <img src="imgs/hero.png" alt="Monish Kumar — Performance Marketer">
+      </div>
+      <div class="floating-badge badge-1"><i class="fas fa-chart-line"></i> Data-Driven</div>
+      <div class="floating-badge badge-2"><i class="fas fa-bullseye"></i> Full-Funnel</div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="marquee">
+    <span>Google Ads</span>
+    <span>Meta Ads</span>
+    <span>HubSpot</span>
+    <span>SEMrush</span>
+    <span>LinkedIn Ads</span>
+    <span>GA4 Analytics</span>
+    <span>Google Ads</span>
+    <span>Meta Ads</span>
+    <span>HubSpot</span>
+    <span>SEMrush</span>
+    <span>LinkedIn Ads</span>
+    <span>GA4 Analytics</span>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">A growth operator who treats marketing like <span style="background: var(--gradient-2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">an engineering problem.</span></h2>
+        <p>I'm Monish — over the last <strong>2+ years</strong>, I've worked hands-on with bootstrapped founders, agencies, and SaaS startups to architect performance marketing systems that focus on <strong>qualified pipeline, not vanity metrics</strong>.</p>
+        <p>My approach is built on three pillars: <strong>data attribution, creative testing velocity, and full-funnel automation</strong>. I treat every rupee like an investment with a tracked ROI — not just an ad spend line item.</p>
+        <p>I'm at a stage in my career where I'm hungry, technically deep, and ready to build long-term partnerships with founders who want a growth operator — not a "set & forget" agency.</p>
+
+        <div class="skills-grid">
+          <div class="skill-pill"><i class="fas fa-bullseye"></i> Paid Acquisition</div>
+          <div class="skill-pill"><i class="fas fa-magnet"></i> Lead Generation</div>
+          <div class="skill-pill"><i class="fas fa-flask"></i> CRO & A/B Testing</div>
+          <div class="skill-pill"><i class="fas fa-robot"></i> Marketing Automation</div>
+          <div class="skill-pill"><i class="fas fa-chart-line"></i> GA4 & Attribution</div>
+          <div class="skill-pill"><i class="fas fa-brain"></i> AI-Driven Campaigns</div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <img src="imgs/analytics.png" alt="Analytics dashboard">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="approach" id="approach">
+  <div class="container">
+    <div class="section-tag">My Methodology</div>
+    <h2 class="section-title">The G.R.O.W. Framework</h2>
+    <p class="section-subtitle">A repeatable 4-stage operating system I follow on every project — from initial audit to scaled growth loops.</p>
+
+    <div class="approach-grid">
+      <div class="approach-card">
+        <span class="step-num">STAGE 01</span>
+        <div class="icon-box"><i class="fas fa-search"></i></div>
+        <h4>Ground Truth</h4>
+        <p>Diagnostic audit of analytics, attribution, ICP, funnel leakage, and unit economics. Instrument GA4, Hotjar, server-side tracking, and CRM before spending ₹1 on ads.</p>
+      </div>
+      <div class="approach-card">
+        <span class="step-num">STAGE 02</span>
+        <div class="icon-box"><i class="fas fa-route"></i></div>
+        <h4>Roadmap</h4>
+        <p>Build a 90-day GTM roadmap with weighted bets per channel. Every channel gets a clear hypothesis: "If we do X, Y should improve."</p>
+      </div>
+      <div class="approach-card">
+        <span class="step-num">STAGE 03</span>
+        <div class="icon-box"><i class="fas fa-rocket"></i></div>
+        <h4>Operate & Test</h4>
+        <p>Launch campaigns with multiple creative variants, lead magnets, and landing page hypotheses. Weekly refresh, daily budget reallocation. Data-led sprints — not "set & forget."</p>
+      </div>
+      <div class="approach-card">
+        <span class="step-num">STAGE 04</span>
+        <div class="icon-box"><i class="fas fa-infinity"></i></div>
+        <h4>Win Loop</h4>
+        <p>Identify winning angles, scale via lookalikes & broader geos, double down on top performers. Layer retention loops: email automation, retargeting, LTV expansion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-studies" id="case-studies">
+  <div class="container">
+    <div class="section-tag">Selected Work</div>
+    <h2 class="section-title">Case Studies</h2>
+    <p class="section-subtitle">Below are 6 in-depth case studies across SaaS, EdTech, Healthcare, and D2C. Each captures the real strategy, frameworks, and learnings from projects I've worked on hands-on.</p>
+
+    <div class="honesty-banner">
+      <i class="fas fa-shield-alt"></i>
+      <div>
+        <strong>A note on transparency:</strong> These case studies document the <em>real strategies, frameworks, and execution approaches</em> I've worked through in client and personal projects. Specific revenue & ROAS numbers are intentionally omitted out of NDA respect and to maintain professional honesty at my current career stage. The focus here is depth of thought, frameworks applied, and lessons learned — which I believe matter more than vanity metrics.
+      </div>
+    </div>
+
+    <div class="cs-grid">
+      <a href="#cs-1" class="cs-card">
+        <div class="cs-image">
+          <span class="cs-industry-tag">B2B SaaS</span>
+          <img src="imgs/saas.png" alt="SaaS case">
+        </div>
+        <div class="cs-body">
+          <div class="cs-client">Series-A Workflow SaaS · Lead Gen Project</div>
+          <h3 class="cs-title">Rebuilding a broken MQL-to-SQL pipeline from scratch</h3>
+          <p class="cs-summary">An HR-tech SaaS was burning ad budget with no clarity on what was actually working. I rebuilt the attribution layer, restructured campaigns, and re-architected the lead magnet strategy.</p>
+          <div class="cs-takeaways">
+            <div class="cs-takeaway"><i class="fas fa-check"></i> Server-side GA4 + HubSpot attribution setup</div>
+            <div class="cs-takeaway"><i class="fas fa-check"></i> ROI calculator outperformed demo CTAs in testing</div>
+          </div>
+          <div class="cs-read-more">Read full case study <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="#cs-2" class="cs-card">
+        <div class="cs-image">
+          <span class="cs-industry-tag">EdTech</span>
+          <img src="imgs/edtech.png" alt="EdTech case">
+        </div>
+        <div class="cs-body">
+          <div class="cs-client">Cohort-Based Course Platform · Webinar Funnel</div>
+          <h3 class="cs-title">Designing a quiz-led webinar funnel for cohort enrolments</h3>
+          <p class="cs-summary">Built a multi-step quiz funnel routing prospects into segmented email sequences. Focused on improving webinar show-up and creative-led trust-building for high-ticket programs.</p>
+          <div class="cs-takeaways">
+            <div class="cs-takeaway"><i class="fas fa-check"></i> Segmented nurture (3 buckets) via Typeform → ConvertKit</div>
+            <div class="cs-takeaway"><i class="fas fa-check"></i> UGC alumni-led creatives beat polished studio ads</div>
+          </div>
+          <div class="cs-read-more">Read full case study <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="#cs-3" class="cs-card">
+        <div class="cs-image">
+          <span class="cs-industry-tag">Healthcare</span>
+          <img src="imgs/health.png" alt="Healthcare case">
+        </div>
+        <div class="cs-body">
+          <div class="cs-client">Multi-City Health Network · Geo Lead Gen</div>
+          <h3 class="cs-title">Architecting hyper-local lead routing across cities</h3>
+          <p class="cs-summary">Healthcare lead gen is operationally complex. I designed a 14-city geo-fenced acquisition system with WhatsApp routing, IVR fallback, and pin-code based landing pages to eliminate "wrong city" leakage.</p>
+          <div class="cs-takeaways">
+            <div class="cs-takeaway"><i class="fas fa-check"></i> WhatsApp chatbot with 9-flow service routing tree</div>
+            <div class="cs-takeaway"><i class="fas fa-check"></i> Compliance-safe creative angle: "family-safe check-up"</div>
+          </div>
+          <div class="cs-read-more">Read full case study <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="#cs-4" class="cs-card">
+        <div class="cs-image">
+          <span class="cs-industry-tag">D2C E-commerce</span>
+          <img src="imgs/d2c.png" alt="D2C case">
+        </div>
+        <div class="cs-body">
+          <div class="cs-client">D2C Skincare Brand · Creative + Funnel Build</div>
+          <h3 class="cs-title">Creative velocity engine + retention OS for a D2C brand</h3>
+          <p class="cs-summary">A founder-led skincare brand had product-market fit but couldn't scale paid acquisition. I rebuilt the creative pipeline, restructured Meta + Google campaigns, and built Klaviyo retention flows.</p>
+          <div class="cs-takeaways">
+            <div class="cs-takeaway"><i class="fas fa-check"></i> 12 UGC creatives every 2 weeks (testing cadence)</div>
+            <div class="cs-takeaway"><i class="fas fa-check"></i> Bundle offer strategy to lift AOV above profitability line</div>
+          </div>
+          <div class="cs-read-more">Read full case study <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="#cs-5" class="cs-card">
+        <div class="cs-image">
+          <span class="cs-industry-tag">B2B SaaS · ABM</span>
+          <img src="imgs/abm.png" alt="ABM case">
+        </div>
+        <div class="cs-body">
+          <div class="cs-client">DevOps SaaS · ABM Motion Design</div>
+          <h3 class="cs-title">Designing a precision ABM motion for enterprise SaaS</h3>
+          <p class="cs-summary">Broad LinkedIn lead-gen wasn't working for an enterprise-targeting DevOps SaaS. I designed a 220-account ABM motion with sequenced outreach, account-named ad creatives, and warm-intro pathways.</p>
+          <div class="cs-takeaways">
+            <div class="cs-takeaway"><i class="fas fa-check"></i> Apollo + LinkedIn Sales Nav account list curation</div>
+            <div class="cs-takeaway"><i class="fas fa-check"></i> 7-touch multi-channel cadence on Outreach.io</div>
+          </div>
+          <div class="cs-read-more">Read full case study <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="#cs-6" class="cs-card">
+        <div class="cs-image">
+          <span class="cs-industry-tag">Wellness · D2C</span>
+          <img src="imgs/wellness.png" alt="Wellness case">
+        </div>
+        <div class="cs-body">
+          <div class="cs-client">Wellness Supplements D2C · Retention OS</div>
+          <h3 class="cs-title">Building a predictive retention engine for a wellness D2C</h3>
+          <p class="cs-summary">Wellness brands live and die by repeat rate. I built a 9-flow Klaviyo retention system with predictive churn triggers, post-purchase education, and refill SMS automation.</p>
+          <div class="cs-takeaways">
+            <div class="cs-takeaway"><i class="fas fa-check"></i> RFM-based dynamic segmentation (14 segments)</div>
+            <div class="cs-takeaway"><i class="fas fa-check"></i> Predictive win-back 60 days before forecasted churn</div>
+          </div>
+          <div class="cs-read-more">Read full case study <i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED CASE STUDY 1 -->
+<section class="detailed-case" id="cs-1">
+  <div class="container">
+    <div class="dc-header">
+      <div class="dc-left">
+        <span class="dc-tag">Case Study 01 · B2B SaaS</span>
+        <h2>Rebuilding a broken MQL-to-SQL pipeline for a workflow SaaS</h2>
+        <p class="dc-sub">A Series-A HR & Ops workflow SaaS was running paid acquisition across Google + LinkedIn but had no real attribution clarity. The sales team was drowning in low-intent leads and questioning the entire ad budget. This is how I'd approach (and approached) a rebuild.</p>
+        <div class="dc-meta">
+          <div class="dc-meta-item"><div class="lbl">Vertical</div><div class="val">HR-Tech B2B SaaS</div></div>
+          <div class="dc-meta-item"><div class="lbl">Role</div><div class="val">Performance Marketing Lead</div></div>
+          <div class="dc-meta-item"><div class="lbl">Channels</div><div class="val">Google Ads, LinkedIn, SEO</div></div>
+          <div class="dc-meta-item"><div class="lbl">Duration</div><div class="val">~5 month engagement</div></div>
+        </div>
+      </div>
+      <div class="dc-image">
+        <img src="imgs/saas.png" alt="SaaS funnel">
+      </div>
+    </div>
+
+    <div class="dc-content">
+      <div class="dc-block">
+        <h4><i class="fas fa-exclamation-triangle"></i> The Problem I Found</h4>
+        <p>When I started auditing, the picture was painfully familiar to anyone who has worked with early-stage SaaS:</p>
+        <ul>
+          <li>Last-click attribution was inflating Google's credit; LinkedIn-assisted touches were invisible</li>
+          <li>No multi-touch tracking — couldn't distinguish "researcher" from "buyer"</li>
+          <li>Demo CTAs were converting at ~4% on landing pages — far below benchmark</li>
+          <li>Sales BDRs were calling everyone equally — no lead scoring or prioritization</li>
+          <li>LinkedIn was running on broad job functions ("Operations") instead of tight ICPs</li>
+        </ul>
+      </div>
+      <div class="dc-block">
+        <h4><i class="fas fa-lightbulb"></i> My Hypothesis</h4>
+        <p>The issue wasn't traffic <em>volume</em> — it was traffic <em>quality</em> and funnel architecture. My working hypothesis:</p>
+        <ul>
+          <li>Shift from generic keywords ("HR software") to <strong>problem-aware long-tail</strong> ("how to automate offboarding")</li>
+          <li>Replace gated demos with a <strong>2-step ROI calculator</strong> — a lower friction "lead magnet" that still proved high intent</li>
+          <li>Build <strong>UTM-driven server-side tracking</strong> so we could trace every lead back to its first-touch channel</li>
+          <li>Tighten LinkedIn targeting to <strong>job title + company size</strong>, not broad industries</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dc-strategy">
+      <h3><i class="fas fa-chess-knight"></i> Execution Strategy</h3>
+      <div class="dc-strategy-grid">
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 01 · WEEKS 1–3</span>
+          <h5>Infrastructure Rebuild</h5>
+          <p>Implemented server-side GTM, GA4 enhanced ecommerce events, HubSpot lifecycle stages, and Hotjar funnel recording. Built a Looker Studio dashboard connecting ad spend to revenue.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 02 · WEEKS 4–8</span>
+          <h5>Creative & Funnel Testing</h5>
+          <p>Launched multiple LinkedIn ad variants, Google search themes, and 3 landing page versions. Tested ROI calculator vs. demo CTA vs. ebook download. ROI calculator won decisively in conversion testing.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 03 · WEEKS 9–20</span>
+          <h5>Scale & Automation</h5>
+          <p>Doubled budget on top-performing campaigns. Built HubSpot lead-scoring + Slack alerts so BDRs called hot leads within minutes of form submission. Layered retargeting via Meta + LinkedIn.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-learnings">
+      <h3><i class="fas fa-graduation-cap"></i> Key Learnings & Frameworks Applied</h3>
+      <div class="dc-learnings-grid">
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-bullseye"></i> Attribution Before Spend</h5>
+          <p>The single highest-leverage thing in B2B SaaS marketing is fixing attribution <em>before</em> scaling spend. Without it, you optimize toward false signals.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-magnet"></i> Lower-Friction Conversion Asset</h5>
+          <p>Replacing "Book a Demo" with "Calculate Your ROI" measurably reduced friction. A calculator captures higher intent than an ebook and lower friction than a demo.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-stopwatch"></i> Speed-to-Lead Matters</h5>
+          <p>Slack alerts + 7-minute SLA on BDR callbacks measurably improved demo conversion. This is one of the easiest wins most B2B teams miss.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-layer-group"></i> Channel-Specific Hypotheses</h5>
+          <p>LinkedIn ≠ Google. Each channel needs its own hypothesis, creative angle, and conversion mechanism. One unified strategy is lazy and underperforms.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-block" style="background: white; margin-bottom: 30px;">
+      <h4><i class="fas fa-tools"></i> Tools & Stack Used</h4>
+      <div class="dc-stack">
+        <span class="dc-stack-pill">Google Ads</span>
+        <span class="dc-stack-pill">LinkedIn Campaign Manager</span>
+        <span class="dc-stack-pill">GA4 + GTM Server-Side</span>
+        <span class="dc-stack-pill">HubSpot CRM</span>
+        <span class="dc-stack-pill">Hotjar</span>
+        <span class="dc-stack-pill">Looker Studio</span>
+        <span class="dc-stack-pill">Unbounce</span>
+        <span class="dc-stack-pill">Zapier</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED CASE STUDY 2 -->
+<section class="detailed-case" id="cs-2">
+  <div class="container">
+    <div class="dc-header">
+      <div class="dc-left">
+        <span class="dc-tag">Case Study 02 · EdTech</span>
+        <h2>Quiz-led webinar funnel for a cohort-based course platform</h2>
+        <p class="dc-sub">Cohort-based courses sell on trust, not features. I designed a quiz-led funnel where prospects self-segmented into 3 readiness buckets, each receiving a tailored 4-day email sequence before a live masterclass — built around UGC alumni testimonials.</p>
+        <div class="dc-meta">
+          <div class="dc-meta-item"><div class="lbl">Vertical</div><div class="val">Cohort-Based EdTech</div></div>
+          <div class="dc-meta-item"><div class="lbl">Role</div><div class="val">Funnel Architect</div></div>
+          <div class="dc-meta-item"><div class="lbl">Channels</div><div class="val">Meta, YouTube, Email, SMS</div></div>
+          <div class="dc-meta-item"><div class="lbl">Duration</div><div class="val">~4 month engagement</div></div>
+        </div>
+      </div>
+      <div class="dc-image">
+        <img src="imgs/edtech.png" alt="EdTech funnel">
+      </div>
+    </div>
+
+    <div class="dc-content">
+      <div class="dc-block">
+        <h4><i class="fas fa-exclamation-triangle"></i> The Problem I Found</h4>
+        <p>EdTech is one of the most competitive paid acquisition verticals in India. The classic pain points showed up:</p>
+        <ul>
+          <li>Heavy reliance on a single influencer-driven Instagram channel — concentration risk</li>
+          <li>No nurture sequence — leads went cold within ~7 days of opt-in</li>
+          <li>Webinar show-up rates around the industry average of 25-30%</li>
+          <li>Generic ad creatives with little differentiation from competitors</li>
+          <li>One-size-fits-all email — no consideration of prospect readiness/intent</li>
+        </ul>
+      </div>
+      <div class="dc-block">
+        <h4><i class="fas fa-lightbulb"></i> My Hypothesis</h4>
+        <p>For high-ticket cohort programs, <em>trust</em> is the conversion currency. My plan:</p>
+        <ul>
+          <li>Build a <strong>2-step quiz funnel</strong> as the top-of-funnel asset ("Are you ready to switch to PM?")</li>
+          <li>Route quiz takers into a <strong>4-day, segment-specific email warm-up</strong></li>
+          <li>Use <strong>creator-led alumni testimonial videos</strong> showing outcomes — not generic feature ads</li>
+          <li>Add a <strong>multi-touch SMS + WhatsApp reminder stack</strong> for webinar show-up (24h / 2h / 15min)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dc-strategy">
+      <h3><i class="fas fa-chess-knight"></i> Execution Strategy</h3>
+      <div class="dc-strategy-grid">
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 01 · WEEKS 1–2</span>
+          <h5>Quiz Funnel Build</h5>
+          <p>Built a 7-question quiz on Typeform mapping respondents to "PM-ready," "PM-curious," or "PM-skeptic" buckets. Each segment received a custom 4-email sequence in ConvertKit.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 02 · WEEKS 3–8</span>
+          <h5>Creative Velocity Engine</h5>
+          <p>Produced batched UGC-style alumni testimonial videos. Tested 6 hooks × 4 thumbnails on Meta. Outcome-focused creatives (e.g., "switched career at X salary") consistently outperformed feature-driven ads.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 03 · WEEKS 9–16</span>
+          <h5>Webinar + WhatsApp Stack</h5>
+          <p>Bi-weekly live masterclasses with 4-touch reminder sequences. Live offer + 48-hr scarcity at end. Show-up rate improved meaningfully vs. industry benchmark.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-learnings">
+      <h3><i class="fas fa-graduation-cap"></i> Key Learnings & Frameworks Applied</h3>
+      <div class="dc-learnings-grid">
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-users"></i> Self-Segmentation Wins</h5>
+          <p>Quizzes don't just qualify — they make prospects <em>feel seen</em>. People who self-segment convert dramatically better than people who get generic nurture.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-video"></i> UGC > Studio</h5>
+          <p>Alumni-shot phone videos outperform polished studio ads in EdTech. Trust is conveyed through unpolish + authenticity, not production value.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-bell"></i> Reminder Stacking</h5>
+          <p>The single biggest webinar improvement came from layered WhatsApp + SMS + email reminders. Each new channel added ~10-15% to show-up rate.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-clock"></i> Scarcity is a Real Lever</h5>
+          <p>48-hour post-webinar offer windows with countdown timers consistently move close rates. Used responsibly, scarcity is honest urgency.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-block" style="background: white; margin-bottom: 30px;">
+      <h4><i class="fas fa-tools"></i> Tools & Stack Used</h4>
+      <div class="dc-stack">
+        <span class="dc-stack-pill">Meta Ads Manager</span>
+        <span class="dc-stack-pill">YouTube Ads</span>
+        <span class="dc-stack-pill">Typeform</span>
+        <span class="dc-stack-pill">ConvertKit</span>
+        <span class="dc-stack-pill">WATI (WhatsApp API)</span>
+        <span class="dc-stack-pill">Demio</span>
+        <span class="dc-stack-pill">Zapier</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED CASE STUDY 3 -->
+<section class="detailed-case" id="cs-3">
+  <div class="container">
+    <div class="dc-header">
+      <div class="dc-left">
+        <span class="dc-tag">Case Study 03 · Healthcare</span>
+        <h2>Hyper-local geo lead generation across a multi-city health network</h2>
+        <p class="dc-sub">Healthcare lead gen is as much an operations problem as a marketing problem. I designed a 14-city geo-fenced acquisition system with WhatsApp-driven pre-qualification, IVR fallback, and pin-code aware landing pages to eliminate "wrong city" leakage.</p>
+        <div class="dc-meta">
+          <div class="dc-meta-item"><div class="lbl">Vertical</div><div class="val">Multi-City Diagnostic Clinics</div></div>
+          <div class="dc-meta-item"><div class="lbl">Role</div><div class="val">Performance Marketing Strategist</div></div>
+          <div class="dc-meta-item"><div class="lbl">Channels</div><div class="val">Meta, Google Local, WhatsApp, IVR</div></div>
+          <div class="dc-meta-item"><div class="lbl">Duration</div><div class="val">~6 month engagement</div></div>
+        </div>
+      </div>
+      <div class="dc-image">
+        <img src="imgs/health.png" alt="Healthcare funnel">
+      </div>
+    </div>
+
+    <div class="dc-content">
+      <div class="dc-block">
+        <h4><i class="fas fa-exclamation-triangle"></i> The Problem I Found</h4>
+        <p>Healthcare lead gen has operational, regulatory, and creative complexities most other verticals don't face:</p>
+        <ul>
+          <li>No central CRM — leads dropping into manual Excel sheets per branch</li>
+          <li>30%+ of leads were from cities where the clinic had no presence — pure waste</li>
+          <li>WhatsApp Business not connected to call center IVR — disjointed customer experience</li>
+          <li>Compliance restrictions on health claims in ad creatives (a real, often-ignored issue)</li>
+          <li>Walk-in conversion (lead → actual visit) was very low — funnel leakage at the booking stage</li>
+        </ul>
+      </div>
+      <div class="dc-block">
+        <h4><i class="fas fa-lightbulb"></i> My Hypothesis</h4>
+        <p>The fix had to be operational, not just creative:</p>
+        <ul>
+          <li>Run <strong>14 geo-fenced campaigns</strong> with a tight ~10km radius around each clinic</li>
+          <li>Build a <strong>WhatsApp chatbot</strong> (WATI) that pre-qualifies + auto-routes to nearest branch</li>
+          <li>Use <strong>pin-code-detected landing pages</strong> to show only relevant nearby clinics</li>
+          <li>Implement <strong>missed-call IVR fallback</strong> for users without WhatsApp</li>
+          <li>Use <strong>"family-safe check-up" angle</strong> — emotional, compliance-safe, broad appeal</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dc-strategy">
+      <h3><i class="fas fa-chess-knight"></i> Execution Strategy</h3>
+      <div class="dc-strategy-grid">
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 01 · WEEKS 1–4</span>
+          <h5>Geo-Infrastructure Setup</h5>
+          <p>Mapped all clinics with lat-long coordinates. Built 14 mirrored landing pages with auto-detected pin codes. Created WhatsApp chatbot tree with 9 service flows + automated branch routing.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 02 · WEEKS 5–12</span>
+          <h5>Creative + Compliance Loop</h5>
+          <p>Worked with the medical team on 16 compliant ad creatives. A/B tested emotional ("family safety") vs. clinical ("get screened") angles. Emotional family-led messaging outperformed.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 03 · WEEKS 13–24</span>
+          <h5>Booking-Stage Optimization</h5>
+          <p>Added live booking calendar with deposit option. Layered retargeting for "viewed but didn't book" with offer codes. Booking conversion improved significantly over the engagement.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-learnings">
+      <h3><i class="fas fa-graduation-cap"></i> Key Learnings & Frameworks Applied</h3>
+      <div class="dc-learnings-grid">
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-map-marker-alt"></i> Geo-Fencing is Non-Negotiable</h5>
+          <p>For local services, broad geo targeting is one of the largest sources of wasted spend. Tight radius fencing per location is table stakes.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-comment-dots"></i> WhatsApp is the New Landing Page</h5>
+          <p>In India, WhatsApp pre-qualification flows convert dramatically better than form-fills. The conversation is the conversion.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-shield-alt"></i> Compliance is a Creative Constraint</h5>
+          <p>The best healthcare creatives lean on emotion (family, peace of mind) — not disease names or fear. This is both ethically right and Meta-compliant.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-link"></i> Funnel Leaks Hide in Operations</h5>
+          <p>The biggest "marketing" leverage in this case was operational — fixing booking flow, not finding more leads. Marketers should always check the last-mile first.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-block" style="background: white; margin-bottom: 30px;">
+      <h4><i class="fas fa-tools"></i> Tools & Stack Used</h4>
+      <div class="dc-stack">
+        <span class="dc-stack-pill">Meta Ads</span>
+        <span class="dc-stack-pill">Google Local Service Ads</span>
+        <span class="dc-stack-pill">WATI (WhatsApp Business API)</span>
+        <span class="dc-stack-pill">Knowlarity IVR</span>
+        <span class="dc-stack-pill">LeadSquared CRM</span>
+        <span class="dc-stack-pill">Calendly</span>
+        <span class="dc-stack-pill">Webflow</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED CASE STUDY 4 -->
+<section class="detailed-case" id="cs-4">
+  <div class="container">
+    <div class="dc-header">
+      <div class="dc-left">
+        <span class="dc-tag">Case Study 04 · D2C E-commerce</span>
+        <h2>Creative velocity engine + retention OS for a D2C skincare brand</h2>
+        <p class="dc-sub">A founder-led D2C skincare brand had strong product-market fit on Instagram organic but couldn't scale paid acquisition profitably. I rebuilt the creative pipeline, restructured Meta + Google campaigns, and built a Klaviyo retention OS to fix the leaky bucket.</p>
+        <div class="dc-meta">
+          <div class="dc-meta-item"><div class="lbl">Vertical</div><div class="val">D2C Skincare</div></div>
+          <div class="dc-meta-item"><div class="lbl">Role</div><div class="val">Growth Operator</div></div>
+          <div class="dc-meta-item"><div class="lbl">Channels</div><div class="val">Meta, Google Shopping, Klaviyo</div></div>
+          <div class="dc-meta-item"><div class="lbl">Duration</div><div class="val">~5 month engagement</div></div>
+        </div>
+      </div>
+      <div class="dc-image">
+        <img src="imgs/d2c.png" alt="D2C funnel">
+      </div>
+    </div>
+
+    <div class="dc-content">
+      <div class="dc-block">
+        <h4><i class="fas fa-exclamation-triangle"></i> The Problem I Found</h4>
+        <p>The founder was running paid herself with classic D2C founder symptoms:</p>
+        <ul>
+          <li>Only 2 ad creatives running, both static product shots — Meta's algorithm needs creative diversity to learn</li>
+          <li>High cart abandon rate with zero recovery flow set up</li>
+          <li>No catalog feed for Google Shopping or Meta Advantage+</li>
+          <li>Average Order Value below the profitability threshold once shipping + COGS factored in</li>
+          <li>No email marketing — newsletter list of ~3K subscribers untouched</li>
+        </ul>
+      </div>
+      <div class="dc-block">
+        <h4><i class="fas fa-lightbulb"></i> My Hypothesis</h4>
+        <p>D2C scaling is roughly 70% creative + 30% offer architecture:</p>
+        <ul>
+          <li>Build a <strong>UGC-led creative velocity engine</strong> — 12 new creatives every 2 weeks to feed Meta's learning</li>
+          <li>Restructure into <strong>Meta Advantage+ Shopping Campaigns</strong> for ML learning efficiency</li>
+          <li>Launch <strong>Google Shopping / Performance Max</strong> with an optimized product feed</li>
+          <li>Add <strong>3-product bundle offers</strong> to push AOV above profitability threshold</li>
+          <li>Build <strong>Klaviyo flows</strong> (welcome + cart abandon + post-purchase + win-back) for retention revenue</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dc-strategy">
+      <h3><i class="fas fa-chess-knight"></i> Execution Strategy</h3>
+      <div class="dc-strategy-grid">
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 01 · WEEKS 1–3</span>
+          <h5>Creative + Catalog Reset</h5>
+          <p>Briefed and produced 24 creatives in batch — 60% UGC, 20% educational ("how to layer skincare"), 20% offer-driven. Rebuilt Shopify product feed for Google Merchant + Meta Catalog.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 02 · WEEKS 4–10</span>
+          <h5>Scaling Architecture</h5>
+          <p>Restructured to 2 ASC (Advantage+ Shopping) campaigns + 1 cold prospecting CBO + 1 retargeting CBO. Killed under-performers weekly. Layered Google Shopping (PMax) as a second engine.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 03 · WEEKS 11–20</span>
+          <h5>Retention Engine Build</h5>
+          <p>Built 7 Klaviyo flows: welcome series, browse abandon, cart abandon, post-purchase, win-back, VIP, and replenishment. Each flow had A/B tested subject lines and offer ladders.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-learnings">
+      <h3><i class="fas fa-graduation-cap"></i> Key Learnings & Frameworks Applied</h3>
+      <div class="dc-learnings-grid">
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-images"></i> Creative is the New Targeting</h5>
+          <p>Meta's algorithm has commoditized targeting — the lever is now creative diversity & velocity. Brands that ship 10+ creatives/week win.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-shopping-basket"></i> Bundles Fix Profitability</h5>
+          <p>For sub-₹1000 AOV D2C brands, paid acquisition is brutal. Bundle offers are the most reliable way to push AOV without raising prices.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-envelope"></i> Email = Profit Channel</h5>
+          <p>Email & SMS contribute 25-35% of revenue in well-run D2C brands. Most founders treat it as an afterthought — it should be a top-3 priority.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-balance-scale"></i> ASC vs CBO Discipline</h5>
+          <p>Don't put everything in Advantage+. Use ASC for scale, but keep a CBO with manual creative testing to feed it new winners.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-block" style="background: white; margin-bottom: 30px;">
+      <h4><i class="fas fa-tools"></i> Tools & Stack Used</h4>
+      <div class="dc-stack">
+        <span class="dc-stack-pill">Meta Ads Manager (ASC + CBO)</span>
+        <span class="dc-stack-pill">Google Ads (PMax)</span>
+        <span class="dc-stack-pill">Shopify</span>
+        <span class="dc-stack-pill">Klaviyo</span>
+        <span class="dc-stack-pill">Triple Whale</span>
+        <span class="dc-stack-pill">Foreplay (creative library)</span>
+        <span class="dc-stack-pill">Judge.me Reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED CASE STUDY 5 -->
+<section class="detailed-case" id="cs-5">
+  <div class="container">
+    <div class="dc-header">
+      <div class="dc-left">
+        <span class="dc-tag">Case Study 05 · ABM · B2B SaaS</span>
+        <h2>Designing a precision ABM motion for a DevOps SaaS</h2>
+        <p class="dc-sub">An enterprise-targeting DevOps SaaS was running broad LinkedIn lead gen — and getting interns + students instead of CTOs. I designed a 220-account ABM motion: tight ICP curation, multi-channel sequenced outreach, account-named ad creatives, and warm-intro pathways.</p>
+        <div class="dc-meta">
+          <div class="dc-meta-item"><div class="lbl">Vertical</div><div class="val">DevOps / Backup SaaS</div></div>
+          <div class="dc-meta-item"><div class="lbl">Role</div><div class="val">ABM Motion Designer</div></div>
+          <div class="dc-meta-item"><div class="lbl">Channels</div><div class="val">LinkedIn, Email, Direct Outreach</div></div>
+          <div class="dc-meta-item"><div class="lbl">ICP</div><div class="val">CTOs / VP Eng · 50–500 emp SaaS</div></div>
+        </div>
+      </div>
+      <div class="dc-image">
+        <img src="imgs/abm.png" alt="ABM funnel">
+      </div>
+    </div>
+
+    <div class="dc-content">
+      <div class="dc-block">
+        <h4><i class="fas fa-exclamation-triangle"></i> The Problem I Found</h4>
+        <p>Classic SMB-style growth tactics weren't translating to enterprise:</p>
+        <ul>
+          <li>Broad LinkedIn lead-gen ads attracting interns + students, not actual buyers</li>
+          <li>BDR team cold-emailing 500/day with sub-2% reply rate — classic spray-and-pray</li>
+          <li>No clearly defined ICP — sales was pursuing anyone who showed "interest"</li>
+          <li>Pipeline coverage at ~1.8x — should be 3-4x for healthy SaaS</li>
+          <li>110-day average deal cycle with poor mid-funnel visibility</li>
+        </ul>
+      </div>
+      <div class="dc-block">
+        <h4><i class="fas fa-lightbulb"></i> My Hypothesis</h4>
+        <p>Stop chasing leads. Start engaging accounts. My plan:</p>
+        <ul>
+          <li>Build a tight <strong>220-account target list</strong> (Indian SaaS, 50–500 emp, AWS/GCP users)</li>
+          <li>Identify <strong>3–5 decision makers per account</strong> via Apollo + LinkedIn Sales Nav</li>
+          <li>Run <strong>multi-channel sequenced outreach</strong>: LinkedIn engagement → email → connection → call</li>
+          <li>Use <strong>personalized industry-report PDFs</strong> as opening hooks</li>
+          <li>Add <strong>warm intro pathway</strong> via founder's network on top-25 priority accounts</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dc-strategy">
+      <h3><i class="fas fa-chess-knight"></i> Execution Strategy</h3>
+      <div class="dc-strategy-grid">
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 01 · WEEKS 1–3</span>
+          <h5>Account & Persona Map</h5>
+          <p>Built a 220-account target list using Apollo + Tracxn + manual curation. Mapped 1,050 decision makers across CTO, VP Eng, DevOps Lead roles. Enriched with intent signals (G2, Bombora).</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 02 · WEEKS 4–10</span>
+          <h5>Sequenced Outreach</h5>
+          <p>Built a 7-touch sequence on Outreach.io: LinkedIn engagement → personalized email → connection request → voice note → reply nurture → cold call → respectful break-up.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 03 · WEEKS 11–16</span>
+          <h5>LinkedIn ABM Ads</h5>
+          <p>Ran LinkedIn Matched Audiences against the 220-list with custom creatives that named each account's industry. Increased account-level engagement on the target list.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-learnings">
+      <h3><i class="fas fa-graduation-cap"></i> Key Learnings & Frameworks Applied</h3>
+      <div class="dc-learnings-grid">
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-bullseye"></i> ABM is a Sales-Marketing Hybrid</h5>
+          <p>Done right, ABM blurs the line between marketing and sales. It can't be owned by either alone — it requires shared accounts, shared metrics, shared accountability.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-list-ol"></i> Quality > Quantity</h5>
+          <p>220 well-mapped accounts outperformed lists of 2,000+ unverified contacts. The discipline is in the curation, not the volume.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-link"></i> Warm Intros Compound</h5>
+          <p>On enterprise deals, a founder-network warm intro is worth 50 cold emails. Map this asset early in any ABM motion.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-user-friends"></i> Personalization at Scale</h5>
+          <p>Templated outreach can still be personalized — using {{company}}, {{role}}, {{recent_news}} variables done well is "personal enough" for high reply rates.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-block" style="background: white; margin-bottom: 30px;">
+      <h4><i class="fas fa-tools"></i> Tools & Stack Used</h4>
+      <div class="dc-stack">
+        <span class="dc-stack-pill">Apollo.io</span>
+        <span class="dc-stack-pill">LinkedIn Sales Navigator</span>
+        <span class="dc-stack-pill">LinkedIn Matched Audiences</span>
+        <span class="dc-stack-pill">Outreach.io</span>
+        <span class="dc-stack-pill">Clearbit</span>
+        <span class="dc-stack-pill">Salesforce CRM</span>
+        <span class="dc-stack-pill">Lemlist</span>
+        <span class="dc-stack-pill">Vidyard</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED CASE STUDY 6 -->
+<section class="detailed-case" id="cs-6">
+  <div class="container">
+    <div class="dc-header">
+      <div class="dc-left">
+        <span class="dc-tag">Case Study 06 · Wellness D2C · Retention</span>
+        <h2>Building a predictive retention engine for a wellness supplements brand</h2>
+        <p class="dc-sub">D2C wellness brands live and die by repeat rate. I built a 9-flow Klaviyo retention system with predictive churn triggers, post-purchase education, and refill SMS — designed around an RFM (Recency-Frequency-Monetary) framework.</p>
+        <div class="dc-meta">
+          <div class="dc-meta-item"><div class="lbl">Vertical</div><div class="val">Wellness Supplements D2C</div></div>
+          <div class="dc-meta-item"><div class="lbl">Role</div><div class="val">Retention Marketing Lead</div></div>
+          <div class="dc-meta-item"><div class="lbl">Channels</div><div class="val">Email, SMS, Push, WhatsApp</div></div>
+          <div class="dc-meta-item"><div class="lbl">Focus</div><div class="val">Retention + LTV expansion</div></div>
+        </div>
+      </div>
+      <div class="dc-image">
+        <img src="imgs/wellness.png" alt="Wellness retention">
+      </div>
+    </div>
+
+    <div class="dc-content">
+      <div class="dc-block">
+        <h4><i class="fas fa-exclamation-triangle"></i> The Problem I Found</h4>
+        <p>Acquisition was working — but retention was the leak:</p>
+        <ul>
+          <li>A majority of customers never made a 2nd purchase within 90 days</li>
+          <li>Email contributed only a small fraction of revenue — far below the 28-35% benchmark</li>
+          <li>No segmentation — same blast going to entire list, killing open rates</li>
+          <li>Subscription churn at ~22%/month — economically unsustainable</li>
+          <li>Zero post-purchase education — customers didn't know how/when to use products</li>
+        </ul>
+      </div>
+      <div class="dc-block">
+        <h4><i class="fas fa-lightbulb"></i> My Hypothesis</h4>
+        <p>Retention isn't about discounts — it's about <em>perceived value over time</em>:</p>
+        <ul>
+          <li>Build <strong>9 segmented Klaviyo flows</strong> based on product, behavior, and lifecycle stage</li>
+          <li>Create a <strong>post-purchase education series</strong> (how to use, what to expect, results timeline)</li>
+          <li>Layer <strong>SMS + WhatsApp</strong> for high-intent moments (refill reminders specifically)</li>
+          <li>Build a <strong>predictive churn score</strong> in Klaviyo using RFM (recency × frequency × monetary)</li>
+          <li>Run <strong>win-back campaigns</strong> 60 days <em>before</em> the predicted churn date</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dc-strategy">
+      <h3><i class="fas fa-chess-knight"></i> Execution Strategy</h3>
+      <div class="dc-strategy-grid">
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 01 · WEEKS 1–4</span>
+          <h5>Segmentation + Flow Audit</h5>
+          <p>Audited the existing Klaviyo setup. Built 14 dynamic segments (VIPs, lapsed, at-risk, new buyers, browse-abandoners, etc.). Each segment got tailored content tone, frequency, and offers.</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 02 · WEEKS 5–10</span>
+          <h5>Education + Refill Engine</h5>
+          <p>Built 5-email post-purchase education series for each product category. Added refill SMS at day 25 (for 30-day cycle products). Reframed messaging from "buy more" to "get results."</p>
+        </div>
+        <div class="dc-strategy-item">
+          <span class="step">PHASE 03 · WEEKS 11–20</span>
+          <h5>Predictive Churn + Win-Back</h5>
+          <p>Built an RFM scoring model in Klaviyo. Triggered win-back flows for customers showing churn signals (declining recency + frequency). Personalized offers based on prior purchases.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-learnings">
+      <h3><i class="fas fa-graduation-cap"></i> Key Learnings & Frameworks Applied</h3>
+      <div class="dc-learnings-grid">
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-graduation-cap"></i> Education > Discounts</h5>
+          <p>For wellness, the highest-LTV customers are educated customers. A great post-purchase education series outperforms any % off discount.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-bell"></i> Refill Timing is Everything</h5>
+          <p>SMS refill reminders sent 5 days before the customer's product runs out had dramatically higher open & click rates than generic email blasts.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-chart-line"></i> RFM as a Operating System</h5>
+          <p>RFM (Recency-Frequency-Monetary) is the most useful framework in D2C retention. It's simple enough to operationalize and predictive enough to act on.</p>
+        </div>
+        <div class="dc-learning-item">
+          <h5><i class="fas fa-handshake"></i> Win Back Before Churn</h5>
+          <p>Win-back campaigns triggered <em>before</em> predicted churn convert better than reactive win-back after the customer is already gone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-block" style="background: white; margin-bottom: 30px;">
+      <h4><i class="fas fa-tools"></i> Tools & Stack Used</h4>
+      <div class="dc-stack">
+        <span class="dc-stack-pill">Klaviyo (Email + SMS)</span>
+        <span class="dc-stack-pill">Shopify Plus</span>
+        <span class="dc-stack-pill">Recharge Subscriptions</span>
+        <span class="dc-stack-pill">Postscript SMS</span>
+        <span class="dc-stack-pill">WATI</span>
+        <span class="dc-stack-pill">Loyalty Lion</span>
+        <span class="dc-stack-pill">Glew Analytics</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-tag">What I Do</div>
+    <h2 class="section-title">Services Offered</h2>
+    <p class="section-subtitle">Three core engagement models — pick what matches your stage and ambition.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-bullseye"></i></div>
+        <h4>Performance Audit & Strategy</h4>
+        <p>A 14-day deep audit of your acquisition, attribution, and funnel. You walk out with a 90-day roadmap and a prioritized execution backlog.</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Full GA4 + Ads audit</li>
+          <li><i class="fas fa-check-circle"></i> Funnel & attribution map</li>
+          <li><i class="fas fa-check-circle"></i> Competitor benchmark</li>
+          <li><i class="fas fa-check-circle"></i> 90-day execution roadmap</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-rocket"></i></div>
+        <h4>Done-for-You Lead Generation</h4>
+        <p>Monthly retainer where I run your paid acquisition end-to-end — campaigns, creatives, landing pages, CRM, weekly reporting.</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Multi-channel campaigns</li>
+          <li><i class="fas fa-check-circle"></i> Creative testing engine</li>
+          <li><i class="fas fa-check-circle"></i> CRO + landing pages</li>
+          <li><i class="fas fa-check-circle"></i> Weekly Looker Studio reports</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-user-tie"></i></div>
+        <h4>Growth Partner / Embedded Marketer</h4>
+        <p>For founders who need senior strategic firepower without a full-time hire. I plug into your team, work with your existing vendors, set OKRs, and run weekly growth meetings.</p>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Team coaching</li>
+          <li><i class="fas fa-check-circle"></i> Vendor & freelancer ops</li>
+          <li><i class="fas fa-check-circle"></i> OKR + reporting setup</li>
+          <li><i class="fas fa-check-circle"></i> Weekly growth standups</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stack">
+  <div class="container">
+    <div class="section-tag">Tools & Platforms</div>
+    <h2 class="section-title">My Tech Stack</h2>
+    <p class="section-subtitle">Tools I use daily across acquisition, attribution, automation, and analytics.</p>
+
+    <div class="stack-grid">
+      <div class="stack-item"><i class="fab fa-google"></i>Google Ads</div>
+      <div class="stack-item"><i class="fab fa-meta"></i>Meta Ads</div>
+      <div class="stack-item"><i class="fab fa-linkedin"></i>LinkedIn Ads</div>
+      <div class="stack-item"><i class="fab fa-youtube"></i>YouTube Ads</div>
+      <div class="stack-item"><i class="fas fa-chart-area"></i>GA4 + GTM</div>
+      <div class="stack-item"><i class="fas fa-fire"></i>HubSpot</div>
+      <div class="stack-item"><i class="fas fa-envelope-open-text"></i>Klaviyo</div>
+      <div class="stack-item"><i class="fab fa-shopify"></i>Shopify</div>
+      <div class="stack-item"><i class="fas fa-bolt"></i>Webflow</div>
+      <div class="stack-item"><i class="fas fa-magnet"></i>Apollo.io</div>
+      <div class="stack-item"><i class="fas fa-paper-plane"></i>Outreach.io</div>
+      <div class="stack-item"><i class="fas fa-water"></i>Triple Whale</div>
+      <div class="stack-item"><i class="fas fa-eye"></i>Hotjar</div>
+      <div class="stack-item"><i class="fas fa-chart-pie"></i>Looker Studio</div>
+      <div class="stack-item"><i class="fas fa-robot"></i>Zapier</div>
+      <div class="stack-item"><i class="fab fa-whatsapp"></i>WATI</div>
+      <div class="stack-item"><i class="fas fa-poll"></i>SEMrush</div>
+      <div class="stack-item"><i class="fas fa-brain"></i>ChatGPT API</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-content">
+    <div class="section-tag" style="color: var(--neon-cyan); justify-content: center; display: inline-flex;">Let's Build Together</div>
+    <h2>Ready to engineer your <span>next growth chapter?</span></h2>
+    <p>I take on 3-4 active clients at a time. If your brand is ready for a math-backed performance engine, let's talk.</p>
+
+    <div class="contact-info">
+      <a href="mailto:monishkumar142000@gmail.com" class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <div class="lbl">Email</div>
+        <div class="val">monishkumar142000@gmail.com</div>
+      </a>
+      <a href="tel:+919205071331" class="contact-card">
+        <i class="fas fa-phone"></i>
+        <div class="lbl">Phone / WhatsApp</div>
+        <div class="val">+91 80767 10896</div>
+      </a>
+      <a href="https://www.linkedin.com/in/monish-kumar-a6084b190" target="_blank" class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <div class="lbl">LinkedIn</div>
+        <div class="val">Connect with me</div>
+      </a>
+    </div>
+
+    <p style="margin-top: 50px; font-size: 14px; color: #64748b;"><i class="fas fa-map-marker-alt"></i> Based in Delhi · Working with brands across India, UAE, US & SEA</p>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">MONISH<span style="color: #00f0ff; -webkit-text-fill-color: #00f0ff;">.</span></div>
+  <p>© 2026 Monish Kumar · Performance Marketer · Delhi, India</p>
+  <p style="margin-top: 6px; font-size: 12px;">Designed for founders who measure twice and spend once.</p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+      nav.style.padding = '12px 60px';
+      nav.style.background = 'rgba(5, 8, 22, 0.95)';
+    } else {
+      nav.style.padding = '18px 60px';
+      nav.style.background = 'rgba(5, 8, 22, 0.85)';
+    }
+  });
+</script>
+</body>
+</html>
